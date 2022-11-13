@@ -91,6 +91,7 @@ body {
 }
 
 .nav-link:hover {
+  transition-duration: 1s;
   background-color: var(--theme-color);
   color: var(--theme-background-color);
 }
@@ -100,7 +101,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 130vh;
   background-color: var(--theme-background-color);
   font-size: 1.5em;
   background-image: url("https://img.onl/U1V8V");
@@ -110,8 +111,7 @@ body {
 #pic {
   width: 150px;
   height: 150px;
-  border-radius: 100%;
-  border: 5px solid var(--theme-color);
+  border: 5px solid var(brown);
   margin-bottom: 5px;
 }
 
@@ -261,7 +261,7 @@ td {
   margin-right: 2px;
   margin-top: -3px;
   vertical-align: middle;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   border: 1px solid #d8d8d8;
 }
 
@@ -304,15 +304,19 @@ td {
   display: flex;
   flex-direction: column;
   max-width: 300px;
-  margin: 10px 5px 10px 5px;
-  background-color: black;
+  margin: 10px 5px 5px 5px;
+  background-color: white;
   border-radius: 10px;
 }
 
 .project-image {
   width: 300px;
   height: 300px;
-  border: 2px solid black;
+  border: 2px solid var(--theme-background-color);
+}
+
+.project-image:hover{
+  border: solid red; 
 }
 
 .project-caption {
