@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  // Variable declarations
+  // declarations
   var nav = document.getElementById("navbar");
   var navUL = document.getElementById("nav");
 
-  // Responsive menu toggle
+  // toggle menu
 
   var toggle = document.getElementById("toggle");
   toggle.addEventListener("click", function(event) {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   });
 
-  // Hide menu on click in body
+  // click menu in body
   document.getElementById("container").addEventListener("click", function(event) {
     if (nav.classList.contains("is-open")) {
       nav.classList.remove("is-open");
@@ -26,14 +26,4 @@ document.addEventListener("DOMContentLoaded", function() {
       nav.classList.remove("is-open");
     }
   });
-
-  /*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});*/
-
 });
